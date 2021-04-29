@@ -1,0 +1,66 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  reviewers:
+  - Johann-S
+  - XhmikosR
+  labels:
+  - dependencies
+  - v5
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: karma-browserstack-launcher
+    versions:
+    - 1.5.1
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.12.10
+    - 7.12.13
+    - 7.12.16
+    - 7.12.17
+    - 7.13.10
+    - 7.13.13
+    - 7.13.14
+    - 7.13.15
+    - 7.13.8
+  - dependency-name: "@babel/cli"
+    versions:
+    - 7.12.10
+    - 7.12.13
+    - 7.12.16
+    - 7.12.17
+    - 7.13.0
+    - 7.13.10
+    - 7.13.14
+  - dependency-name: "@babel/preset-env"
+    versions:
+    - 7.12.11
+    - 7.12.13
+    - 7.12.16
+    - 7.12.17
+    - 7.13.10
+    - 7.13.12
+    - 7.13.8
+    - 7.13.9
+  - dependency-name: karma-rollup-preprocessor
+    versions:
+    - 7.0.5
+    - 7.0.6
+  - dependency-name: lockfile-lint
+    versions:
+    - 4.3.7
+    - 4.6.1
+  - dependency-name: "@babel/plugin-proposal-object-rest-spread"
+    versions:
+    - 7.12.1
+    - 7.12.13
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
